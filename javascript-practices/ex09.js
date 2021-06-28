@@ -17,4 +17,19 @@ MyObject.prototype.info = function(){
         this.course );
 }
 
+// MyObject 객체 생성1
+var o1 = new MyObject("둘리", 10);
+o1.school = 'multicampus';
+o1.info();
+
+// MyObject 객체 생성2
+var o2 = new MyObject("마이콜", 20);
+o2.info();
+
+// 오버라이딩
+o2.info = function(){
+    console.log("비밀!!!!");
+}
+o2.info();
+
 
