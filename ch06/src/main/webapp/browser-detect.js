@@ -14,9 +14,9 @@ var BrowserDetect = {
 				if (dataString) {
 					if (dataString.indexOf(data[i].subString) != -1)
 						return data[i].identity;
-				}
-				else if (dataProp)
+				} else if (dataProp) {
 					return data[i].identity;
+				}
 			}
 		},
 		searchVersion: function (dataString) {
