@@ -12,28 +12,6 @@
 <script src="${pageContext.request.contextPath }/jquery/jquery-3.6.0.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>
-/*
-var fetch = function(){
-	$.ajax({
-		url: "${pageContext.request.contextPath }/guestbook/api/list",
-		dataType: "json",
-		type: "get",
-		success: function(response){
-			response.data.forEach(function(vo){
-				html =
-					"<li data-no='" + vo.no + "'>" + 
-						"<strong>" + vo.name + "</strong>" +
-						"<p>" + vo.message + "</p>" +
-						"<strong></strong>" + 
-						"<a href='' data-no='" + vo.no + "'>삭제</a>" + 
-					"</li>";
-				$("#list-guestbook").append(html);	
-			});
-		}
-	});	
-}
-*/
-
 $(function(){
 	$("#add-form").submit(function(event){
 		event.preventDefault();
