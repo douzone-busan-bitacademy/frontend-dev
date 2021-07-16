@@ -49,6 +49,11 @@ req02("http://www.kickscar.com/api")
 })
 */
 
-fetch();
+const f = async function(){
+    const response = await fetch("http://www.kickscar.com/api");
+    return response;
+}
+
+console.log(f());
 
 console.log('do something');
