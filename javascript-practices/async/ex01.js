@@ -7,7 +7,7 @@ const ex01 = function(param, callback){
         } else {
             callback(new Error('fail'), null);
         }
-    }, 1000);
+    }, 2000);
 }
 
 if(require.main == module) {
